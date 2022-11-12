@@ -74,11 +74,23 @@ How did we pick assets for each portfolio type?
 * Sharpe Ratios 
 * Beta 
 
-<img align = 'middle' alt="Alt text" src="../Project_Two/Visuals/Picking%20Assets%20Plots/Stock_Picks.png">
+<p align="center">
 
-<img align = 'middle' alt="Alt text" src="../Project_Two/Visuals/Picking%20Assets%20Plots/Bond_Picks.png">
+  <img src="./Visuals/Picking%20Assets%20Plots/Stock_Picks.png" height = 400 width = 800>
 
-<img align = 'middle' alt="Alt text" src="../Project_Two/Visuals/Picking%20Assets%20Plots/Crypto_Picks.png">
+</p>
+
+<p align="center">
+
+  <img src="./Visuals/Picking%20Assets%20Plots/Bond_Picks.png" height = 400 width = 800>
+
+</p>
+
+<p align="center">
+
+  <img src="./Visuals/Picking%20Assets%20Plots/Crypto_Picks.png" height = 400 width = 800>
+
+</p>
 
 </br>
 
