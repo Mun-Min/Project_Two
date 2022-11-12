@@ -61,7 +61,7 @@ Data Sources: Yahoo Finance API, U.S. Bureau of Labor Statistics, CoinCodex
 
 ## Portfolio Allocation 
 
-As a team, we decided to include 3 different portoflio types: 
+As a team, we decided to include 3 different portfolio types: 
 * Aggressive
 * Moderate
 * Conservative
