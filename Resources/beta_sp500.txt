@@ -1,0 +1,27 @@
+The Beta of the top 25 stocks in the S&P 500 are: Symbols
+AAPL     1.206670
+ABBV     0.850271
+AMZN     1.262841
+BAC      1.414731
+BRK-B    0.897049
+CVX      1.163672
+GOOGL    1.029036
+GOOG     1.027596
+HD       0.978358
+JNJ      0.600632
+JPM      1.171190
+KO       0.636172
+LLY      0.325735
+MA       1.117433
+META     1.034769
+MRK      0.472645
+MSFT     0.916416
+NVDA     1.634955
+PEP      0.617423
+PFE      0.715729
+PG       0.450346
+TSLA     1.570585
+UNH      0.709490
+V        0.943686
+XOM      1.060405
+Name: ^GSPC, dtype: float64
