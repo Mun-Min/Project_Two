@@ -24,7 +24,7 @@
 
 Initial Goal:
 
-`Our initial project goal was to create a chatbot utilizing Machine Learning that generates an investment portfolio based off of the user's age and risk tolerance.`
+`Our initial project goal was to create a chatbot through AWS utilizing Machine Learning that generates an investment portfolio based off of the user's age and risk tolerance.`
 
 Revised Goal: 
 
@@ -32,25 +32,25 @@ Revised Goal:
 
 Step 1 : Determining portfolio allocation using Rule of 110 
 
-* The Rule of 110 is a rule of thumb that says the percentage of your money invested in stocks should be equal to 110 minus your age. For example, if you are 30 years old the Rule of 110 states you should have 80% of your buying power in stocks and the rest in bonds.
+* The Rule of 110 is a rule of thumb that says the percentage of your money invested in stocks in a retirement portfolio should be equal to 110 minus your age. For example, if you are 30 years old, the Rule of 110 states you should have 80% of your portfolio allocated to stocks and the rest in non-stock investments. Newer investment advice is to allocate 1-5% of a retirement portfolio towards cryptocurrency investments. The remaining allocation should be invested in bonds and real estatement investment trusts (REITs).
 
     * For the purposes of our project, we decided to also include cryptocurrencies, specifically Bitcoin & Ethereum (two largest cryptocurrencies by marketcap).
   
     * Assets chosen to be included in portfolio:
       * Top 25 SP500 Stocks (ranked by marketcap)
       * 30-yr Treasury Bond, 10-yr Treasury Bond
-      * Bitcoin, Ethereum
+      * Bitcoin, Ethereum 
 
 Step 2: Utilize Machine Learning to model Top 25 SP500 stocks for performance in the short-term
 
-* Models: 
+* Machine Learning Models: 
   * Facebook's Prophet Model 
   * Logistic Regression Model
   * Decision Tree Regressor Model 
 
 Step 3: Monte Carlo projections for stock portfolio performance over the long-term
 
-* We decided to also include long-term projections to furthur analyze the portfolio
+* We decided to also include long-term projections to furthur analyze the portfolio.
 
 ## Data Techniques 
 
@@ -62,11 +62,12 @@ Data Sources: Yahoo Finance API, U.S. Bureau of Labor Statistics, CoinCodex
 ## Portfolio Allocation 
 
 As a team, we decided to include 3 different portfolio types: 
+
 * Aggressive
 * Moderate
 * Conservative
 
-`This was originally going to be implemented into a chatbot, and if we had more time to work on the project, we would focus on creating a UI where the user can select a portfolio type and generate a weighted portfolio based off of the Rule of 110.`
+`This was originally going to be implemented into the chatbot, and if we had more time to work on the project, we would focus on creating a UI where the user could select a portfolio type and generate a weighted portfolio based off of the Rule of 110.`
 
 How did we pick assets for each portfolio type? 
 
@@ -137,7 +138,7 @@ Decision Tree Regressor and Logistic Regression may be helpful when determining 
 
 * Based off of the RMSE scores above, we can see that the values increase dramatically from Day 1 to 30 meaning the Prophet Model starts to become blurry as time goes on. Based off of our analysis we realized that for most machine learning models, long-term forecasting does not provide much value due to a number of reasons, mainly due to the fact that historical data is not enough to determine future prices. Other metrics should be taken into account such as sentiment analysis, technical analysis, and fundamental analysis.
 
-* After running and evaluating our Prophet Model, we decided to implement a Monte Carlo forecast to see if we could generate more useful results. 
+* After running and evaluating our Prophet Model, we decided to implement a Monte Carlo Simulation to see if we could generate more useful results. 
 
   * A Monte Carlo Simulation was more helpful in calculating expected returns over a 5-year period of the defined portfolio with a 95% confidence interval. 
   
@@ -147,4 +148,6 @@ Decision Tree Regressor and Logistic Regression may be helpful when determining 
 
 ## Conclusion: 
 
-* Our intial goal was to generate an investment portfolio given a users age and risk tolerance. However, we narrowed down our scope to creating an investment portfolio utilizing Machine Learning Models and traditional financial metrics. Overall, Facebook's Prophet Model generates slightly accurate forecasts in the short-term but starts becoming hazy as time goes on. The Monte Carlo Simulation provided more results and showed the overall growth of each of the portfolio types. 
+* Our intial goal was to generate an investment portfolio given a users age and risk tolerance via chatbot. However, we narrowed down our scope to creating an investment portfolio utilizing Machine Learning Models and traditional financial metrics. Overall, Facebook's Prophet Model generates slightly accurate forecasts in the short-term but starts becoming hazy as time goes on. The Monte Carlo Simulation provided more results and showed the overall growth of each of the portfolio types. 
+
+---
